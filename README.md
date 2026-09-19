@@ -36,5 +36,5 @@ A desktop application for managing students and courses using Python and Tkinter
 
 
 
-Run `main\_project.py` to launch the application.
+Run `main_project.py` to launch the application.
 
