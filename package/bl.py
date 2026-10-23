@@ -6,10 +6,23 @@ student_file_path = r"file\students.txt"
 course_file_path = r"file\courses.txt"
 
 def listofstr_to_listofdict(data):
-    return list(map(lambda std: eval(std.strip()), data))
+    result = []
+
+    for std in data:
+        std = std.strip()
+
+        if std:
+            result.append(eval(std))
+
+    return result
 
 def listofdict_to_listofstr(data):
-    return list(map(lambda cnt: f"{cnt}\n", data))
+    result = []
+
+    for cnt in data:
+        result.append(f"{cnt}\n")
+
+    return result
 
 def read_student_course_bl():
 
